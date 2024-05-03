@@ -16,40 +16,64 @@
 --tercer-color:#5482B3;	/* color claro */
 --cuarto-color:#052759; /* color oscuro*/
 --quinto-color:#021024; /*color super oscuro*/
-
+--font-family:'Lato', sans-serif;
+--font-family-two:"Pacifico", cursive;
 }
-
+body{
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 4rem;
+    position: relative;
+    font-family: var(--font-family);
+}
 #navbar-icon{
     width: 2rem;
     height: 2rem;
     cursor: pointer;
 }
+
+#nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--quinto-color);
+    height: 4rem;
+    z-index: 10;
+}
+
+.nav-container{    
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+    
+}
+
 #title{
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--primary-color);
     cursor: pointer;
+} 
+
+#nav-menu{
+    display: none;
 }
-nav{
+#content{
     height: calc(100vh - 4rem);
-    position: fixed;
-    width: 100%;
+    /* background-image: url(img/hero-image.jpg); */
+    /* background-position: center;
+    background-size: cover;
+    padding: 0 1rem; */
 }
-.nav-container{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--cuarto-color);
-    color: var(--cuarto-color);  
-    
-}
-main{
-    background-color: var(--secundary-color);
-    height: 90vh;
-    width: 100%;
-}
+
 
 footer{
     background-color: var(--cuarto-color);
@@ -57,7 +81,7 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    
     align-items: center;
     padding: 1rem;
     color: var(--cuarto-color);
@@ -75,6 +99,24 @@ footer{
     color:var(--primary-color);
 }
 #red-social{
-    width: 2rem;
-    height: 2rem;
+    width: 1rem;
+    height: 1rem;
+} 
+
+@media (min-width:768px) {
+    #navbar-icon{
+        display: none;
+    } 
+    #nav-menu{
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 1rem;
+    margin: 0.7rem;
+    list-style: none;
+    }
+    li>a{
+    text-decoration: none;
+    list-style: none;
+    }
 }
