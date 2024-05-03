@@ -1,0 +1,19 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    border-width: 0; 
+    border-style: solid;
+}
+
+
+ /* variables para colores */
+:root {
+
+--primary-color:#C2E8FF; /*color ultra claro*/ 
+--secundary-color:#7DA0CA; /* color super claro*/
+--tercer-color:#5482B3;	/* color claro */
+--cuarto-color:#052759; /* color oscuro*/
+--quinto-color:#021024; /*color super oscuro*/
+
+}
