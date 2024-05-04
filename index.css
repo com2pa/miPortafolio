@@ -245,17 +245,7 @@ h2 {
 .contact-container {
     margin: 0 2rem;
 }
-form {
-    gap: 2rem;
-    display: flex;
-    flex-direction: column;
-}
 
-input[type="email"] {
-    background-color: darkgrey;
-    height: 2rem;
-    border-radius: 0.5rem;
-}
 
 #correo{
     padding: 1rem 0;
@@ -452,22 +442,9 @@ footer{
         font-size:3rem;
        
     }
-    input[type="email"] {
-        width: 60%;
-        height: 3rem;
-        font-size: 1rem;
-    }
-    #email-form{
-        width: 20%;
-    }
-    form {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    #correo{
-        width: 50%;
-    }
+    
+    
+    
     
 
 }
