@@ -77,6 +77,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items:center ;
+    text-align: center;
 
     
 }
@@ -87,9 +88,9 @@ body{
 }
 #content{
     height: calc(100vh - 4rem);
-    background-image: url(img/developers.svg);
-    background-position: center;
-    background-size: cover;
+    /* background-image: url(img/developers.svg); */
+    /* background-position: center;
+    background-size: cover; */
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
@@ -98,6 +99,7 @@ body{
     gap: 1rem;
     padding: 1.5rem;
     justify-content: center;
+    background-color:var(--secundary-color);
 }
 
 #content >p{
@@ -116,7 +118,7 @@ body{
 }
 #name{
     font-family:var(--font-family-two);
-    color:var(--secundary-color);
+    color:var(--primary-color);
     font-size: 2rem;
     font-weight: 600;
 }
@@ -146,8 +148,9 @@ body{
     padding: 2rem;
     gap: 2rem;
 }
+
 .projectos-1{
-    border: 1px solid var(--primary-color);
+    border-top: 1.5rem solid var(--quinto-color);
     width: 90%;
     height: auto;
     justify-content: center;
@@ -171,12 +174,52 @@ body{
     cursor: pointer;
     background-color:var(--secundary-color);
     transition: .3s all ease-in-out;
-}
-button:hover{
-    background-color:var(--primary-color);
+    cursor: pointer;
     
 }
+button:hover{
+    background-color:red;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
 
+}
+#lenguaje{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+#lenguaje-title{
+    
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem;
+    transition: .3s all ease-in-out;
+}
+.lenguaje-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.lenguaje1{
+    /* border: 1px solid red; */
+    box-shadow:
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.101),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.149),
+    100px 100px 80px rgba(0, 0, 0, 0.25);
+}
+.leng-img{
+    width: 100%;
+    height: auto;
+
+}
 #contact{
     background-color:var(--tercer-color);
     height: 100vh;
@@ -279,9 +322,23 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items:center ;
+        align-items:center  ;
 
-        
+        position: relative;
+        background:var(--cuarto-color);
+    }
+    #presentacion::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        left: -0%;
+        top: 100%;
+        z-index: 10;
+        display: block;
+        height: 50px;
+        background-size: 50px 100%;
+        background-image: linear-gradient(135deg, var(--cuarto-color) 25%, transparent 25%), linear-gradient(225deg, var(--cuarto-color) 25%, transparent 25%);
+        background-position: 0 0;
     }
     #presentacion-title >span{
         font-family: var(--font-family-two);
@@ -300,17 +357,43 @@ footer{
         opacity: 0.5;
         height: 50%;
     }
-    /* .content-img{
-        width: 50%;
-        height: 100%;
+    #lenguaje{
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         gap: 1rem;
-        padding: 1.5rem;
-    } */
-
+        
+    }
+    #lenguaje-title{
+        
+        font-size: 3rem;
+        font-weight: 600;
+        text-align: center;
+        padding: 1rem;
+        transition: .3s all ease-in-out;
+    }
+    .lenguaje-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .lenguaje1{
+        /* border: 1px solid red; */
+        box-shadow:
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.101),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.149),
+        100px 100px 80px rgba(0, 0, 0, 0.25);
+    }
+    .leng-img{
+        width: 100%;
+        height: auto;
+ 
+    }
 
     #project{
         background-color:var(--cuarto-color);
@@ -333,7 +416,7 @@ footer{
      
      }
      .projectos-1{
-         border: 1px solid var(--primary-color);
+         border-top: 1rem solid var(--quinto-color);
          width: 90%;
          height: auto;
          justify-content: center;
@@ -357,9 +440,11 @@ footer{
         cursor: pointer;
         background-color:var(--secundary-color);
         transition: .3s all ease-in-out;
+        cursor: pointer;
     }
     button:hover{
         background-color:var(--primary-color);
+        cursor: pointer;
         
     }
 
