@@ -27,6 +27,7 @@ body{
     position: relative;
     font-family: var(--font-family);
 }
+/* inicio menu---------------------- */
 #navbar-icon{
     width: 2rem;
     height: 2rem;
@@ -66,17 +67,103 @@ body{
 #nav-menu{
     display: none;
 }
+/* final menu--------------------------- */
+/* inicio body ---------------------------------------------------------- */
 #content{
     height: calc(100vh - 4rem);
-    /* background-image: url(img/hero-image.jpg); */
-    /* background-position: center;
+    background-image: url(img/developers.svg);
+    background-position: center;
     background-size: cover;
-    padding: 0 1rem; */
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    justify-content: center;
 }
 
-
+#content >p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* color: var(--primary-color); */
+    text-align: justify;
+    /* padding: 1rem; */
+}
+#titulo{
+    font-size: 3rem;
+    font-weight: 600;
+    /* color: var(--primary-color); */
+    text-align: center;
+    padding: 1rem;
+}
+#name{
+    font-family:var(--font-family-two);
+    color:var(--secundary-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+#content-img{
+    display: none;
+}
+.content-about>p{
+    font-weight: 600;
+}
+#project{
+    background-color:var(--cuarto-color);
+    /* height: calc(100vh - 4rem); */
+ }
+ .project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 2rem;
+    gap: 1rem;
+}
+.projectos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+.projectos-1{
+    border: 1px solid var(--primary-color);
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    
+}
+.img-proyectos{
+    width: 100%;
+    height: auto;
+ }
+ h4 ,p {
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size:1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+ }
+ button {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+    background-color:var(--secundary-color);
+    transition: .3s all ease-in-out;
+}
+button:hover{
+    background-color:var(--primary-color);
+    
+}
+/* fin de body */
+/* pie de pagina ------------------------------------------------------------ */
 footer{
-    background-color: var(--cuarto-color);
+    background-color: var(--quinto-color);
     height: 10vh;
     width: 100%;
     display: flex;
@@ -118,5 +205,80 @@ footer{
     li>a{
     text-decoration: none;
     list-style: none;
+    }
+
+    #content{
+        background-image:none;
+        display: flex;
+        flex-direction: row;
+        background-color:var(--primary-color);
+    }
+    #content-img{
+        display: block;
+        width: auto;
+        opacity: 0.5;
+        height: 50%;
+    }
+    /* .content-img{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.5rem;
+    } */
+
+
+    #project{
+        background-color:var(--cuarto-color);
+        height: calc(100vh - 4rem);
+     }
+     .project-container{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items:center;
+         padding: 2rem;
+         gap: 1rem;
+     }
+     .projectos{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         justify-items: center;
+         text-align: center;
+         padding: 2rem;
+     
+     }
+     .projectos-1{
+         border: 1px solid var(--primary-color);
+         width: 90%;
+         height: auto;
+         justify-content: center;
+         
+     }
+     .img-proyectos{
+        width: 100%;
+        height: auto;
+     }
+     h4 ,p {
+        text-align: center;
+        padding: 0.5rem 0;
+        font-size:1rem;
+        font-weight: 600;
+        color: var(--primary-color);
+     }
+     button {
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        width: 100%;
+        cursor: pointer;
+        background-color:var(--secundary-color);
+        transition: .3s all ease-in-out;
+    }
+    button:hover{
+        background-color:var(--primary-color);
+        
     }
 }
