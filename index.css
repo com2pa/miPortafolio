@@ -18,6 +18,7 @@
 --quinto-color:#021024; /*color super oscuro*/
 --font-family:'Lato', sans-serif;
 --font-family-two:"Pacifico", cursive;
+--letra:#000;
 }
 body{
     margin: 0;
@@ -69,6 +70,19 @@ body{
 }
 /* final menu--------------------------- */
 /* inicio body ---------------------------------------------------------- */
+#presentacion{
+    height: calc(100vh - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    
+}
+#presentacion-title >span{
+    font-family: var(--font-family-two);
+    color:var(--secundary-color);
+    transition: .3s all ease-in-out;
+}
 #content{
     height: calc(100vh - 4rem);
     background-image: url(img/developers.svg);
@@ -248,12 +262,24 @@ footer{
     text-decoration: none;
     list-style: none;
     }
-
+    #presentacion{
+        height: calc(100vh - 4rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center ;
+        
+    }
+    #presentacion-title >span{
+        font-family: var(--font-family-two);
+        color:var(--secundary-color);
+        transition: .3s all ease-in-out;
+    }
     #content{
         background-image:none;
         display: flex;
         flex-direction: row;
-        background-color:var(--primary-color);
+        background-color:var(--letra);
     }
     #content-img{
         display: block;
