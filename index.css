@@ -471,3 +471,71 @@ footer{
     
 
 }
+
+@media (min-width:1024px) {
+    .projectos {
+        margin-top: 5rem;
+    }
+    h4, p {
+       
+        font-size: 1.5rem;
+        
+    }
+}
+@media(min-width:1440px){
+    #nav-bar {
+        height: 6rem;
+    }
+    #title{
+        font-size: 3rem;
+    }
+    #nav-menu{
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 6rem;
+    }
+    #titulo {
+        font-size: 4rem;
+        color:var(--primary-color);
+    }
+    h4, p {
+        font-size: 2rem;
+    }
+    #lenguaje-title {
+        font-size:5rem ;
+    }
+    
+    
+}
+@media(min-width:2560px){
+    #nav-bar {
+        height: 10rem;
+        width: 100%;
+    }
+    .nav-container {
+        justify-content: space-between;
+    }
+    #title{
+        font-size: 5rem;
+    }
+    #nav-menu{
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 10rem;
+    }
+    #titulo {
+        font-size: 9rem;
+        color:var(--primary-color);
+    }
+    #name {
+        font-size: 5rem;
+    }
+    h4, p {
+        font-size: 3rem;
+    }
+    #lenguaje-title {
+        font-size: 8rem;
+    }
+}
