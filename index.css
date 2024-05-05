@@ -497,6 +497,10 @@ footer{
         
         height: 20vh;
     }
+    .leng-img {
+        width: 75%;
+        height: auto;
+    }
 
 }
 @media(min-width:1440px){
