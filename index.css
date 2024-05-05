@@ -88,6 +88,12 @@ body{
     color:var(--secundary-color);
     transition: .3s all ease-in-out;
 }
+.presentacion-title-active{
+    color: red;
+    font-weight: 900;
+}
+
+
 #content{
     height: calc(100vh - 4rem);
     /* background-image: url(img/developers.svg); */
